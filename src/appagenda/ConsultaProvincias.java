@@ -43,10 +43,12 @@ public class ConsultaProvincias {
         List<Provincia> listProvincias = queryProvincias.getResultList();
         
         // Iteramos sobre la lista para obtener el nombre de todas als provincias
+        System.out.println("Provincias: \n" + "------------");
         for(Provincia provincia: listProvincias)
         {
             System.out.println(provincia.getNombre());
         }
+        System.out.println();
         
         /*
             Consultar la tabla provincia buscando una provincia concreta por nombre. Buscaremos Cadiz
@@ -65,6 +67,7 @@ public class ConsultaProvincias {
             System.out.println(provinciaCadiz.getId() + ":");
             System.out.println(provinciaCadiz.getNombre());
         }
+        System.out.println();
         
         /*
             Uso del metodo: <T> T find(Class<T> EntityClass, Object primaryKey), para encontrar un registro sabiendo su clave primaria
@@ -83,6 +86,7 @@ public class ConsultaProvincias {
             // Si no se ha encontrado, mensaje de error
             System.out.println("No hay ninguna provincia con ID = 2");
         }
+        System.out.println();
         
         /*
             Modificacion de objetos (registros, ya que cada registro es un objeto en java)

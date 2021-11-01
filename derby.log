@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Sun Oct 31 21:50:25 CET 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017c-d81e-1d96-000007787f78 
+Mon Nov 01 11:19:17 CET 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017c-db02-a970-000007793888 
 on database directory /home/jose/NetBeansProjects/DI/DI_T02/AppAgenda/BDAgenda with class loader sun.misc.Launcher$AppClassLoader@677327b6 
 Loaded from file:/home/jose/NetBeansProjects/DI/DI_T02/AppAgenda/lib/derby.jar
 java.vendor=Oracle Corporation
@@ -10,8 +10,7 @@ os.name=Linux
 os.arch=amd64
 os.version=5.11.0-38-generic
 derby.system.home=null
-Incomplete log record detected in file /home/jose/NetBeansProjects/DI/DI_T02/AppAgenda/BDAgenda/log/log1.dat clearing log file from position 289.211 to eof at 1.048.576.
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
-Sun Oct 31 21:50:25 CET 2021:
-Shutting down instance a816c00e-017c-d81e-1d96-000007787f78 on database directory /home/jose/NetBeansProjects/DI/DI_T02/AppAgenda/BDAgenda with class loader sun.misc.Launcher$AppClassLoader@677327b6 
+Mon Nov 01 11:19:18 CET 2021:
+Shutting down instance a816c00e-017c-db02-a970-000007793888 on database directory /home/jose/NetBeansProjects/DI/DI_T02/AppAgenda/BDAgenda with class loader sun.misc.Launcher$AppClassLoader@677327b6 
