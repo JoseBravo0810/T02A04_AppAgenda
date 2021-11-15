@@ -118,7 +118,7 @@ public class ConsultaProvincias {
         // Finalizamos la transaccion
         em.getTransaction().commit();
     */
-    
+    /* 
         // Ejecutamos el metodo getSingleResult() sobre el query que tenia cargada la provincia de cadiz (pasos previos). Es necesario hacer un casting debido a que el metodo devuelve una vble de tipo Object
         Provincia cadiz = (Provincia) queryProvinciaCadiz.getSingleResult();
         
@@ -130,11 +130,14 @@ public class ConsultaProvincias {
         em.merge(cadiz);
         // Finalizamos la transaccion para que persistan los datos (se guarde el codigo de Cadiz)
         em.getTransaction().commit();
-    
+    */
         /*
             Eliminacion de un determinado objeto (registro en la DB)
+    Lo comentamos porque se considera un metodo inseguro, y esque siempre, cada vez que se ejecute la aplicacion, este metodo cargara su main, el cual elimina el registro 15 de la tabla provincia, 
+    error grave si es en una aplicacion real. Las demas tambien se consideran inseguras, y es que cualquiera con acceso a esta clase podria acceder a la base de datos, pero esta es la que causa
+    , a mi parecer, un conflicto grave para la aplicacion
         */
-        
+    /*
         // Buscamos la provincia con id 15 (no existe)
         Provincia provinciaId15 = em.find(Provincia.class, 15);
         // Comenzamos transaccion
@@ -150,9 +153,10 @@ public class ConsultaProvincias {
             // Si no, mensaje de error
             System.out.println("No hay ninguna provincia con ID = 15");
         }
+        System.out.println();
         // Finalizamos la transaccion
         em.getTransaction().commit();
-        
+    */
         
         // Cerramos la conexion con la base de datos
         em.close();
